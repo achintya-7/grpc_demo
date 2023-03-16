@@ -1,0 +1,10 @@
+syntax = "proto3";
+package pb;
+
+option go_package = "github.com/achintya-7/quiz/pb";
+import "rpc_joke.proto";
+
+service JokeService {
+    rpc CreateJoke (CreateJokeRequest) returns (CreateJokeResponse) {}
+    rpc GetJoke (GetJokeRequest) returns (GetJokeResponse) {}
+}

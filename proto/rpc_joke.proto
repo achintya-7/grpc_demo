@@ -1,0 +1,25 @@
+syntax = "proto3";
+package pb;
+option go_package = "github.com/achintya-7/quiz/pb";
+
+message Joke {
+    string made_by = 1;
+    string setup = 2;
+    string punchline = 3;
+}
+
+message CreateJokeRequest {
+    Joke joke = 1;
+}
+
+message CreateJokeResponse {
+    string message = 1;
+}
+
+message GetJokeRequest {
+    int32 id = 1;
+}
+
+message GetJokeResponse {
+    Joke joke = 1;
+}
