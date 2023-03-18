@@ -15,7 +15,8 @@ func main() {
 }
 
 func runGRPC() {
-	grpcServer := grpc.NewServer()
+	grpcLogger := grpc.UnaryInterceptor(gapi.GrpcLogger)
+	grpcServer := grpc.NewServer(grpcLogger)
 	server := gapi.NewServer()
 	pb.RegisterJokeServiceServer(grpcServer, server)
 	reflection.Register(grpcServer)
