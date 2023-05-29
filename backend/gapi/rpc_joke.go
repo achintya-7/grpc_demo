@@ -4,7 +4,7 @@ import (
 	"context"
 	"math/rand"
 
-	"github.com/achintya-7/grpc_demo/pb"
+	"github.com/achintya-7/grpc_demo/gen"
 )
 
 func (server *Server) CreateJoke(c context.Context, req *pb.CreateJokeRequest) (*pb.CreateJokeResponse, error) {

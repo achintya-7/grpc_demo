@@ -5,7 +5,7 @@ import (
 	"net"
 
 	"github.com/achintya-7/grpc_demo/gapi"
-	"github.com/achintya-7/grpc_demo/pb"
+	"github.com/achintya-7/grpc_demo/gen"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )

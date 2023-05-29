@@ -1,6 +1,6 @@
 package gapi
 
-import "github.com/achintya-7/grpc_demo/pb"
+import "github.com/achintya-7/grpc_demo/gen"
 
 type Server struct {
 	pb.UnimplementedJokeServiceServer
